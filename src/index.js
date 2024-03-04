@@ -1,7 +1,6 @@
 const express = require("express");
 const apiroutes = require("./routes");
 const { serverConfig, loggerConfig } = require("./config");
-console.log("serverconfig", serverConfig, "loggerconfig: ", loggerConfig);
 const app = express();
 app.use("/api", apiroutes);
 app.listen(serverConfig.PORT, () => {
